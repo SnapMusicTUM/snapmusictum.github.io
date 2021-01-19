@@ -1,0 +1,115 @@
+/* Show it is fixed to the top */
+
+body {
+    /* min-height: 75rem; */
+    padding-top: 4.5rem;
+}
+
+
+/* Carousel base class */
+
+.carousel {
+    margin-bottom: 4rem;
+}
+
+
+/* Since positioning the image, we need to help out the caption */
+
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+
+/* Declare heights because of positioning of img element */
+
+.carousel-item {
+    height: 32rem;
+}
+
+.carousel-item>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+}
+
+/* quiz styling */
+#auswertung {
+    display: none;
+}
+
+#quiz-result {
+    display: none;
+    margin-bottom: 10px;
+    
+    text-align: center;
+    font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .quizlib-question {
+    margin-bottom: 1em;
+}
+
+.quizlib-question-title {}
+
+.quizlib-question-answers ul {
+    list-style: none;
+}
+
+.quizlib-question-warning {
+    color: #f44336;
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+}
+
+.quizlib-correct {
+    color: #4caf50;
+}
+
+.quizlib-incorrect {
+    color: #f44336;
+}
+
+.card {
+    padding: 8px;
+    background-color: #fff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.15);
+  }
+
+  button {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 4px;
+  
+    cursor: pointer;
+  
+    font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+    font-size: 16px;
+    color: #fff;
+  
+    background-color: #1d1e4e;
+    border: none;
+    -webkit-border-radius: 2px;
+    -moz-border-radius:2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
+  }
+  button:hover {
+    background-color: #2a2a6b;
+  }
+  button:active {
+    -webkit-box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.3);
+  }
