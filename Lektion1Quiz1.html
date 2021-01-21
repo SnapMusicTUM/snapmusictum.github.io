@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/png" href="img/logo.png">
+
+    <!-- script + style for the quiz (copy to other sections where needed)-->
+    <script type="text/javascript" src="scripts/quizlib.1.0.1.min.js"></script>
+    <!-- Dev: <script type="text/javascript" src="../../src/quizlib.js"></script>-->
+    <script type="text/javascript" src="scripts/main.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="styles/style.css" rel="stylesheet">
+    <title>Snap!Music</title>
+</head>
+
+<body style="padding-top: 4.5rem;">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #1d1e4e;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt=""> Snap!Music
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://snap.berkeley.edu/">Snap!</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Lektionen
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="Lektion1.html">Lektion 1</a></li>
+                            <li><a class="dropdown-item" href="Lektion2.html">Lektion 2</a></li>
+                            <li><a class="dropdown-item" href="Lektion3.html">Lektion 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Beispiele.html">Beispiele</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link" href="Lektion1.html" style="color:#1d1e4e">Einleitung</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Lektion1Quiz1.html" style="color:#1d1e4e">Quiz</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Lektion1Video1.html" style="color:#1d1e4e">Video</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Lektion1Aufgabe1.html" style="color:#1d1e4e">Aufgabe</a>
+            </li>
+        </ul>
+
+        <!-- QUIZ -->
+        <div class="bg-light p-5 rounded">
+            <h1>Quiz</h1><br>
+            <h2>Wie gut kennst du dich mit dem Thema aus?</h2><br>
+            <div id="quiz-1">
+                <!-- possible input types are text, radio and checkbox + name is the number of the question + value is important for the right answers
+                    <input type="text" name="q1">
+                    <li><label><input type="radio" name="q2" value="a">xyz</label></li> 
+                    <li><label><input type="checkbox" name="q3" value="a">xyz</label></li>
+                -->
+                <!-- Question 1 -->
+                <div class="card quizlib-question">
+                    <div class="quizlib-question-title">1. Aus wie vielen Tönen besteht eine Tonleiter?
+                    </div>
+                    <div class="quizlib-question-answers">
+                        <input type="text" name="q1">
+                    </div>
+                </div><br>
+                <!-- Question 2 -->
+                <div class="card quizlib-question">
+                    <div class="quizlib-question-title">2. Zwischen welchen Stufen befinden sich in der Dur-Tonleiter die kleinen Sekunden?</div>
+                    <div class="quizlib-question-answers">
+                        <ul>
+                            <li><label><input type="checkbox" name="q2" value="a"> 2/3</label></li>
+                            <li><label><input type="checkbox" name="q2" value="b"> 3/4</label></li>
+                            <li><label><input type="checkbox" name="q2" value="c"> 5/6</label></li>
+                            <li><label><input type="checkbox" name="q2" value="d"> 7/8</label></li>
+                        </ul>
+                    </div>
+                </div><br>
+                <!-- Question 3 -->
+                <div class="card quizlib-question">
+                    <div class="quizlib-question-title">3. Welche Töne (Stufen) einer Dur-Tonleiter benötigt man um den dazu gehörenden Dur-Dreiklang zu bilden?</div>
+                    <div class="quizlib-question-answers">
+                        <ul>
+                            <li><label><input type="checkbox" name="q3" value="a"> 1</label></li>
+                            <li><label><input type="checkbox" name="q3" value="b"> 2</label></li>
+                            <li><label><input type="checkbox" name="q3" value="c"> 3</label></li>
+                            <li><label><input type="checkbox" name="q3" value="d"> 4</label></li>
+                            <li><label><input type="checkbox" name="q3" value="e"> 5</label></li>
+                            <li><label><input type="checkbox" name="q3" value="f"> 6</label></li>
+                            <li><label><input type="checkbox" name="q3" value="g"> 7</label></li>
+                        </ul>
+                    </div>
+                </div><br>
+                <!-- Question 4 -->
+                <div class="card quizlib-question">
+                    <div class="quizlib-question-title">4. Was sind die Intervalle für einen Dur-Dreiklang?</div>
+                    <div class="quizlib-question-answers">
+                        <ul>
+                            <li><label><input type="radio" name="q4" value="a"> Grundton - große Terz - übermäßige Quinte</label></li>
+                            <li><label><input type="radio" name="q4" value="b"> Grundton - kleine Terz - verminderte Quinte</label></li>
+                            <li><label><input type="radio" name="q4" value="c"> Grundton - große Terz - reine Quinte</label></li>
+                        </ul>
+                    </div>
+                </div><br>
+                <!-- Question 5 -->
+                <div class="card quizlib-question">
+                    <div class="quizlib-question-title">5. Wo liegen die Töne bei einem Dur-Dreiklang auf der Notenzeile?</div>
+                    <div class="quizlib-question-answers">
+                        <ul>
+                            <li><label><input type="radio" name="q5" value="a"> alle auf den Notenlinien</label></li>
+                            <li><label><input type="radio" name="q5" value="b"> alle auf den Notenlinien oder alle in den Zwischenräumen</label></li>
+                            <li><label><input type="radio" name="q5" value="c"> alle in den Zwischenräumen</label></li>
+                        </ul>
+                    </div>
+                </div><br>
+                <!-- Answer Button. Here, we pass the ID of the quiz element (the parent of this button) to the showResults function.  -->
+                <button type="button" onclick="showResults(this.parentNode.id);">Antworten überprüfen!</button>
+            </div>
+
+            <!-- Auswertung des Tests (ob der Schüler denn nun das Video gucken soll oder nicht) -->
+            <h2 id="auswertung">Auswertung</h2><br>
+            <div id="quiz-result" class="card">
+                Du hast <span id="quiz-percent"></span>% - <span id="quiz-score"></span>/<span id="quiz-max-score"></span> Fragen richtig beantwortet!<br />
+            </div>
+            <div id="quizfeedback"></div>
+            <!-- progress bar
+            <div class="progress" id="progress-bar">
+                <div class="progress-bar bg-success" id="pb-right" style="width:0%">
+                    Richtig
+                </div>
+                <div class="progress-bar bg-danger" id="pb-wrong"  style="width:0%">
+                    Falsch
+                </div>
+                <div class="progress-bar bg-secondary" id="pb-noanswer" style="width:100%">
+                    Nicht beantwortet
+                </div>
+            </div><br>
+            <p display="inline" id="final-feedback"></p>
+            -->
+        </div>
+
+        <!-- <div class="bg-light p-5 rounded">
+            <h1>Navbar example</h1>
+            <p class="lead">This example is a quick exercise to illustrate how fixed to top navbar works. As you scroll, it will remain fixed to the top of your browser’s viewport.</p>
+            <a class="btn btn-lg btn-primary" href="../components/navbar/" role="button">View navbar docs &raquo;</a>
+        </div> -->
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script>
+        function auswerten() {
+            //Prozentsatz richtiger und falscher Antworten berechnen
+            //Progress bar anpassen
+            document.getElementById("pb-right").style.width = "80%"
+            document.getElementById("pb-wrong").style.width = "20%"
+            document.getElementById("pb-noanswer").style.width = "0%"
+                //abhängig von Anteil richtiger Fragen Feedback anzeigen
+            document.getElementById("final-feedback").innerHTML = displayFeedback() + "<br><br> Falls du das Quiz nochmal machen möchtest, kannst du einfach diese Seite neu laden."
+        }
+
+        function displayFeedback() {
+            if (document.getElementById("pb-right").style.width > "70%") {
+                return "Gut gemacht! Du weißt schon viel über dieses Thema und kannst dir direkt das Video zur Umsetzung in Snap! angucken."
+            } else {
+                return "Du konntest noch nicht alle Fragen richtig beantworten. Guck dir das Thema noch einmal genau an bevor du mit der Umsetzung in Snap! weiter machst."
+            }
+            return "Etwas ist schiefgegeangen :("
+        }
+    </script>
+</body>
+
+</html>
