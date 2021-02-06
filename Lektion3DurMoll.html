@@ -36,10 +36,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" target="_blank" href="https://snap.berkeley.edu/">Snap!</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="ProjektEinleitung.html">Projekt</a>
-                    </li>
+                    </li>                    
                     <li class="nav-item dropdown active">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Lektionen
@@ -51,6 +48,9 @@
                             <li><a class="dropdown-item" href="Lektion4Einleitung.html">Lektion 4: 4 Chords - Tonleiterstufen</a></li>
                             <li><a class="dropdown-item" href="Lektion5Einleitung.html">Lektion 5: Quintverwandtschaft</a></li>
                         </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="ProjektEinleitung.html">Projekt</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Beispiele.html">Beispiele</a>
@@ -76,17 +76,61 @@
                 <a class="nav-link active" aria-current="page" href="Lektion3DurMoll.html" style="color:#1d1e4e">Dur-/Moll-Dreiklänge</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="Lektion3Video.html" style="color:#1d1e4e">Video</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="Lektion3Aufgabe.html" style="color:#1d1e4e">Aufgabe</a>
             </li>
         </ul>
 
         <div class="bg-light p-5 rounded">
-            <h1>Überschrift 1</h1><br>
-            <h2>Überschrift 2</h2><br>
+            <h1>Wiederholung</h1><br>
+            <h2>Dur-Dreiklang</h2><br>
             <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-                et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                Ein Dur-Dreiklang kann mit Hilfe der entsprechenden Dur-Tonleiter gebildet werden. 
+                Hierfür wird der erste, dritte und fünfte Ton der Tonleiter benötigt. 
+                Dies entspricht dem Grundton sowie einer großen Terz und einer reinen Quinte (jeweils vom Grundton aus).
+                Als Eselsbrücke kann der Bau eines Dur-Dreiklangs mit dem eines Schneemanns verglichen werden. 
+                Dies bedeutet, dass die drei Töne des Dreiklangs entweder alle auf den Notenzeilen oder alle im Zwischenraum der Notenzeilen übereinander liegen. 
+                Wichtig ist jedoch, dass die Vorzeichen für das Einhalten der Intervalle zwischen den Tönen nicht vergessen werden.
+            </p>
+            <br><h2>Moll-Dreiklang</h2><br>
+            <p>
+                Der Moll-Dreiklang ist einem Dur-Dreiklang im Aufbau recht ähnlich, genau wie bei den Tonleitern auch. 
+                So wird für die Bildung eines Moll-Dreiklangs der erste, dritte und fünfte Ton der dazugehörigen Moll-Tonleiter benötigt. 
+                Diese liegen – gleich dem Prinzip bei einem Dur-Dreiklang – alle auf den Notenzeilen oder im Zwischenraum der Notenzeilen übereinander. 
+                Einziger Unterschied zum Dur-Dreiklang sind die Intervalle. 
+                Während ein Dur-Dreiklang aus dem Grundton einer großen Terz und einer reinen Quinte zusammengesetzt ist, 
+                besteht ein Moll-Dreiklang aus dem Grundton einer kleinen Terz und einer reinen Quinte. 
+                Das Intervall der kleinen Terz umfasst dabei drei Halbtonschritte. 
+                Ob also ein Dreiklang in Dur oder Moll steht, entscheidet allein die Terz des Dreiklangs.
+
+            </p>
+            <br><h2>Umkehrung eines Dreiklangs</h2><br>
+            <p>
+                Bisher war der Grundton bei den Dreiklängen immer der tiefste Ton. 
+                Allerdings können auch die beiden anderen Töne des Dreiklangs als untersten Ton genutzt werden. 
+                Dies wird auch als Umkehrung eines Dreiklangs bezeichnet. 
+                Bei der ersten Umkehrung ist die Terz der tiefste Ton, weshalb der Grundton eine Oktave höher geschrieben wird. 
+                Bei der zweiten Umkehrung ist dann die Quinte der tiefste Ton. 
+                Somit muss sowohl der Grundton als auch die Terz eine Oktave höher geschrieben werden. 
+                Diese Methode wird häufig verwendet, damit möglichst kleine Sprünge zwischen verschiedenen Dreiklängen entstehen.
+
+            </p>
+            <br><h2>Tipps für Snap!</h2><br>
+            <p>
+                Auch in Snap! kann ein Dreiklang implementiert werden. 
+                Dafür wird der „spiele parallel“ Block benötigt, der unter der Kategorie “Steuerung” zu finden ist. 
+                Die Verwendung des Blocks „spiele parallel“ führt dazu, dass alle von dem Kommando eingeschlossenen Blöcke parallel ausgeführt werden. 
+                Allerdings braucht jede parallele Ausführung eine eigene Lücke in dem „spiele parallel“ Block. 
+                Eine Lücke wird hinzugefügt, indem auf das nach rechts zeigende Dreieck am Block gedrückt wird. 
+                Wurde ausversehen eine Lücke zu viel eingefügt, braucht muss nur auf das nach links zeigende Dreieck zur Entfernung geklickt werden. 
+                Für die Implementierung eines Dreiklanges werden drei von diesen Lücken benötigt. 
+                Dabei muss in jede Lücke ein „spiele Note“  Block eingefügt werden. 
+                Nun ist die Grundlage der Implementierung des Dreiklangs geschaffen und es fehlen nur noch die entsprechenden Notennamen. 
+                Diese können analog zur Papierform ermittelt werden – zuerst der Grundton, dann die große Terz und zuletzt die Quinte. 
+                Als Hilfestellung zur Bestimmung der Intervalle kann die angezeigte Klaviatur verwendet werden. 
+                Bei der Wiedergabe des Dreiklangs kann dieser mit Hilfe des Gehörs und der Anzeige in der Notenzeile überprüft werden.
             </p>
         </div>
         <!-- <div class="bg-light p-5 rounded">
