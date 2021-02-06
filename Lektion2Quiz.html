@@ -36,9 +36,6 @@
                     <li class="nav-item">
                         <a class="nav-link" target="_blank" href="https://snap.berkeley.edu/">Snap!</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="ProjektEinleitung.html">Projekt</a>
-                    </li>
                     <li class="nav-item dropdown active">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Lektionen
@@ -50,6 +47,9 @@
                             <li><a class="dropdown-item" href="Lektion4Einleitung.html">Lektion 4: 4 Chords - Tonleiterstufen</a></li>
                             <li><a class="dropdown-item" href="Lektion5Einleitung.html">Lektion 5: Quintverwandtschaft</a></li>
                         </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="ProjektEinleitung.html">Projekt</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Beispiele.html">Beispiele</a>
@@ -81,72 +81,141 @@
         <!-- QUIZ -->
         <div class="bg-light p-5 rounded">
             <h1>Quiz</h1><br>
-            <h2>Wie gut kennst du dich mit dem Thema aus?</h2><br>
+            <h2>Wie gut kennst Du dich mit den Tonleitern aus?</h2><br>
             <div id="quiz-1">
                 <!-- possible input types are text, radio and checkbox + name is the number of the question + value is important for the right answers
                         <input type="text" name="q1">
                         <li><label><input type="radio" name="q2" value="a">xyz</label></li> 
                         <li><label><input type="checkbox" name="q3" value="a">xyz</label></li>
                     -->
-                <!-- Question 1 -->
-                <div class="card quizlib-question">
-                    <div class="quizlib-question-title">1. Aus wie vielen Tönen besteht eine Tonleiter?
-                    </div>
-                    <div class="quizlib-question-answers">
-                        <input type="text" name="q1">
-                    </div>
-                </div><br>
-                <!-- Question 2 -->
-                <div class="card quizlib-question">
-                    <div class="quizlib-question-title">2. Zwischen welchen Stufen befinden sich in der Dur-Tonleiter die kleinen Sekunden?</div>
-                    <div class="quizlib-question-answers">
-                        <ul>
-                            <li><label><input type="checkbox" name="q2" value="a"> 2/3</label></li>
-                            <li><label><input type="checkbox" name="q2" value="b"> 3/4</label></li>
-                            <li><label><input type="checkbox" name="q2" value="c"> 5/6</label></li>
-                            <li><label><input type="checkbox" name="q2" value="d"> 7/8</label></li>
-                        </ul>
-                    </div>
-                </div><br>
-                <!-- Question 3 -->
-                <div class="card quizlib-question">
-                    <div class="quizlib-question-title">3. Welche Töne (Stufen) einer Dur-Tonleiter benötigt man um den dazu gehörenden Dur-Dreiklang zu bilden?</div>
-                    <div class="quizlib-question-answers">
-                        <ul>
-                            <li><label><input type="checkbox" name="q3" value="a"> 1</label></li>
-                            <li><label><input type="checkbox" name="q3" value="b"> 2</label></li>
-                            <li><label><input type="checkbox" name="q3" value="c"> 3</label></li>
-                            <li><label><input type="checkbox" name="q3" value="d"> 4</label></li>
-                            <li><label><input type="checkbox" name="q3" value="e"> 5</label></li>
-                            <li><label><input type="checkbox" name="q3" value="f"> 6</label></li>
-                            <li><label><input type="checkbox" name="q3" value="g"> 7</label></li>
-                        </ul>
-                    </div>
-                </div><br>
-                <!-- Question 4 -->
-                <div class="card quizlib-question">
-                    <div class="quizlib-question-title">4. Was sind die Intervalle für einen Dur-Dreiklang?</div>
-                    <div class="quizlib-question-answers">
-                        <ul>
-                            <li><label><input type="radio" name="q4" value="a"> Grundton - große Terz - übermäßige Quinte</label></li>
-                            <li><label><input type="radio" name="q4" value="b"> Grundton - kleine Terz - verminderte Quinte</label></li>
-                            <li><label><input type="radio" name="q4" value="c"> Grundton - große Terz - reine Quinte</label></li>
-                        </ul>
-                    </div>
-                </div><br>
-                <!-- Question 5 -->
-                <div class="card quizlib-question">
-                    <div class="quizlib-question-title">5. Wo liegen die Töne bei einem Dur-Dreiklang auf der Notenzeile?</div>
-                    <div class="quizlib-question-answers">
-                        <ul>
-                            <li><label><input type="radio" name="q5" value="a"> alle auf den Notenlinien</label></li>
-                            <li><label><input type="radio" name="q5" value="b"> alle auf den Notenlinien oder alle in den Zwischenräumen</label></li>
-                            <li><label><input type="radio" name="q5" value="c"> alle in den Zwischenräumen</label></li>
-                        </ul>
-                    </div>
-                </div><br>
-                <!-- Answer Button. Here, we pass the ID of the quiz element (the parent of this button) to the showResults function.  -->
-                <button type="button" onclick="showResults(this.parentNode.id);">Antworten überprüfen!</button>
+               <!-- Question 1 -->
+               <div class="card quizlib-question">
+                <div class="quizlib-question-title">1. Aus wie vielen Tönen besteht eine Tonleiter?</div>
+                <div class="quizlib-question-answers">
+                    <input type="text" name="q1">
+                </div>
+            </div><br>
+            <!-- Question 2 -->
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">2. Zwischen welchen Stufen befinden sich in der Dur-Tonleiter die kleinen Sekunden?</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="checkbox" name="q2" value="a"> 1/2</label></li>
+                        <li><label><input type="checkbox" name="q2" value="b"> 2/3</label></li>
+                        <li><label><input type="checkbox" name="q2" value="c"> 3/4</label></li>
+                        <li><label><input type="checkbox" name="q2" value="d"> 4/5</label></li>
+                        <li><label><input type="checkbox" name="q2" value="e"> 5/6</label></li>
+                        <li><label><input type="checkbox" name="q2" value="f"> 6/7</label></li>
+                        <li><label><input type="checkbox" name="q2" value="g"> 7/8</label></li>
+                    </ul>
+                </div>
+            </div><br>
+            <!-- Question 3 -->
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">Gegeben sind der folgenden vier Töne einer Tonleiter  <img src="quiz1/Es-Dur Teil2.PNG" class="img-fluid" alt="Story1" width="150"> <br> 3. Welche vier Töne fehlen für eine vollständige B-Dur-Tonleiter?</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="radio" name="q3" value="a">  <img src="quiz1/Es-Dur falsch.PNG" class="img-fluid" alt="Story1" width="150"></label></li>
+                        <li><label><input type="radio" name="q3" value="b">  <img src="quiz1/Es-Dur falsch3.PNG" class="img-fluid" alt="Story1" width="150"></label></li>
+                        <li><label><input type="radio" name="q3" value="c">  <img src="quiz1/Es-Dur Teil1.PNG" class="img-fluid" alt="Story1" width="150"></label></li>
+                        <li><label><input type="radio" name="q3" value="d">  <img src="quiz1/Es-Dur falsch2.PNG" class="img-fluid" alt="Story1" width="150"></label></li>
+                        <li><label><input type="radio" name="q3" value="e">  <img src="quiz1/Es-Dur falsch4.PNG" class="img-fluid" alt="Story1" width="150"></label></li>
+                    </ul>
+                </div>
+            </div><br>
+            <!-- Question 4 -->
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">Gegeben ist die folgende Tonleiter mit Lücken <img src="quiz1/E-Dur fehlend.png" class="img-fluid" alt="Story1" width="200"> <br> 4. Welche Noten fehlen für eine vollständigen E-Dur Tonleiter?</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="checkbox" name="q4" value="a">  <img src="quiz1/E-Dur Lücke1 falsch1.PNG" class="img-fluid" alt="Story1" width="120"></label></li>
+                        <li><label><input type="checkbox" name="q4" value="b">  <img src="quiz1/E-Dur Lücke2 falsch3.PNG" class="img-fluid" alt="Story1" width="120"></label></li>
+                        <li><label><input type="checkbox" name="q4" value="c">  <img src="quiz1/E-Dur Lücke1 falsch3.PNG" class="img-fluid" alt="Story1" width="120"></label></li>
+                        <li><label><input type="checkbox" name="q4" value="d"> <img src="quiz1/E-Dur Lücke1 falsch2.PNG" class="img-fluid" alt="Story1" width="120"></label></li>
+                        <li><label><input type="checkbox" name="q4" value="e"> <img src="quiz1/E-Dur Lücke2.PNG" class="img-fluid" alt="Story1" width="120"></label></li>
+                        <li><label><input type="checkbox" name="q4" value="f"> <img src="quiz1/E-Dur Lücke2 falsch1.PNG" class="img-fluid" alt="Story1" width="120"></label></li>
+                        <li><label><input type="checkbox" name="q4" value="g"> <img src="quiz1/E-Dur Lücke1.PNG" class="img-fluid" alt="Story1" width="120"></label></li>
+                        <li><label><input type="checkbox" name="q4" value="h"> <img src="quiz1/E-Dur Lücke2 falsch2.PNG" class="img-fluid" alt="Story1" width="120"></label></li>
+                    </ul>
+                </div>
+            </div><br>
+            <!-- Question 5 -->
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">5. Zwischen welchen Stufen befinden sich in der Moll-Tonleiter die kleinen Sekunden?</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="checkbox" name="q5" value="a"> 1/2</label></li>
+                        <li><label><input type="checkbox" name="q5" value="b"> 2/3</label></li>
+                        <li><label><input type="checkbox" name="q5" value="c"> 3/4</label></li>
+                        <li><label><input type="checkbox" name="q5" value="d"> 4/5</label></li>
+                        <li><label><input type="checkbox" name="q5" value="e"> 5/6</label></li>
+                        <li><label><input type="checkbox" name="q5" value="f"> 6/7</label></li>
+                        <li><label><input type="checkbox" name="q5" value="g"> 7/8</label></li>
+                    </ul>
+                </div>
+            </div><br>
+            <!-- Question 6 -->
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">Gegeben sind diese vier Töne einer Tonleiter  <img src="quiz1/H-Moll Teil2.PNG" class="img-fluid" alt="Story1" width="150"> <br> 6. Welche vier Töne fehlen für eine vollständige H-Moll-Tonleiter?</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="radio" name="q6" value="a">  <img src="quiz1/H-Moll falsch2.PNG" class="img-fluid" alt="Story1" width="150"></label></li>
+                        <li><label><input type="radio" name="q6" value="b">  <img src="quiz1/H-Moll falsch4.PNG" class="img-fluid" alt="Story1" width="150"></label></li>
+                        <li><label><input type="radio" name="q6" value="c">  <img src="quiz1/H-Moll falsch3.PNG" class="img-fluid" alt="Story1" width="150"></label></li>
+                        <li><label><input type="radio" name="q6" value="d">  <img src="quiz1/H-Moll Teil1.PNG" class="img-fluid" alt="Story1" width="150"></label></li>
+                        <li><label><input type="radio" name="q6" value="e">  <img src="quiz1/H-Moll falsch1.PNG" class="img-fluid" alt="Story1" width="150"></label></li>
+                        <li><label><input type="radio" name="q6" value="f">  <img src="quiz1/H-Moll falsch.PNG" class="img-fluid" alt="Story1" width="150"></label></li>
+                    </ul>
+                </div>
+            </div><br>
+            <!-- Question 7 -->
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">Gegeben ist die folgende Tonleiter mit Lücken <img src="quiz1/C-Moll fehlend.png" class="img-fluid" alt="Story1" width="200"> <br> 7. Welche Noten fehlen für eine vollständigen C-Moll-Tonleiter?</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="checkbox" name="q7" value="a">  <img src="quiz1/C-Moll Lücke2 falsch3.PNG" class="img-fluid" alt="Story1" width="120"></label></li>
+                        <li><label><input type="checkbox" name="q7" value="b">  <img src="quiz1/C-Moll Lücke2 falsch.PNG" class="img-fluid" alt="Story1" width="120"></label></li>
+                        <li><label><input type="checkbox" name="q7" value="c">  <img src="quiz1/C-Moll Lücke1 falsch2.PNG" class="img-fluid" alt="Story1" width="120"></label></li>
+                        <li><label><input type="checkbox" name="q7" value="d"> <img src="quiz1/C-Moll Lücke1.PNG" class="img-fluid" alt="Story1" width="120"></label></li>
+                        <li><label><input type="checkbox" name="q7" value="e"> <img src="quiz1/C-Moll Lücke1 falsch3.PNG" class="img-fluid" alt="Story1" width="120"></label></li>
+                        <li><label><input type="checkbox" name="q7" value="f"> <img src="quiz1/C-Moll Lücke2 falsch1.PNG" class="img-fluid" alt="Story1" width="120"></label></li>
+                        <li><label><input type="checkbox" name="q7" value="g"> <img src="quiz1/C-Moll Lücke1 falsch2.PNG" class="img-fluid" alt="Story1" width="120"></label></li>
+                        <li><label><input type="checkbox" name="q7" value="h"> <img src="quiz1/C-Moll Lücke2.PNG" class="img-fluid" alt="Story1" width="120"></label></li>
+                    </ul>
+                </div>
+            </div><br>
+            <!-- Question 8 -->
+             <div class="card quizlib-question">
+                <div class="quizlib-question-title">8. Welches Klangbild erzeugt das Tongeschlecht Dur?</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="checkbox" name="q8" value="a"> traurig</label></li>
+                        <li><label><input type="checkbox" name="q8" value="b"> unruhig</label></li>
+                        <li><label><input type="checkbox" name="q8" value="c"> aggresiv</label></li>
+                        <li><label><input type="checkbox" name="q8" value="d"> fröhlich</label></li>
+                        <li><label><input type="checkbox" name="q8" value="e"> düster</label></li>
+                        <li><label><input type="checkbox" name="q8" value="f"> heiter</label></li>
+                        <li><label><input type="checkbox" name="q8" value="g"> ruhig</label></li>
+                    </ul>
+                </div>
+            </div><br>
+            <!-- Question 9 -->
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">8. Welches Klangbild erzeugt das Tongeschlecht Moll?</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="checkbox" name="q9" value="a"> düster</label></li>
+                        <li><label><input type="checkbox" name="q9" value="b"> heiter</label></li>
+                        <li><label><input type="checkbox" name="q9" value="c"> aggresiv</label></li>
+                        <li><label><input type="checkbox" name="q9" value="d"> ruhig</label></li>
+                        <li><label><input type="checkbox" name="q9" value="e"> traurig</label></li>
+                        <li><label><input type="checkbox" name="q9" value="f"> unruhig</label></li>
+                        <li><label><input type="checkbox" name="q9" value="g"> fröhlich</label></li>
+                    </ul>
+                </div>
+            </div><br>
+             <!-- Answer Button. Here, we pass the ID of the quiz element (the parent of this button) to the showResults function.  -->
+            <button type="button" onclick="showResults(this.parentNode.id);">Antworten überprüfen!</button>
             </div>
 
             <!-- Auswertung des Tests (ob der Schüler denn nun das Video gucken soll oder nicht) -->
@@ -187,14 +256,14 @@
             document.getElementById("pb-wrong").style.width = "20%"
             document.getElementById("pb-noanswer").style.width = "0%"
                 //abhängig von Anteil richtiger Fragen Feedback anzeigen
-            document.getElementById("final-feedback").innerHTML = displayFeedback() + "<br><br> Falls du das Quiz nochmal machen möchtest, kannst du einfach diese Seite neu laden."
+            document.getElementById("final-feedback").innerHTML = displayFeedback() + "<br><br> Falls Du das Quiz nochmal machen möchtest, kannst Du einfach diese Seite neu laden."
         }
 
         function displayFeedback() {
             if (document.getElementById("pb-right").style.width > "70%") {
                 return "Gut gemacht! Du weißt schon viel über dieses Thema und kannst dir direkt das Video zur Umsetzung in Snap! angucken."
             } else {
-                return "Du konntest noch nicht alle Fragen richtig beantworten. Guck dir das Thema noch einmal genau an bevor du mit der Umsetzung in Snap! weiter machst."
+                return "Du konntest noch nicht alle Fragen richtig beantworten. Guck dir das Thema noch einmal genau an bevor Du mit der Umsetzung in Snap! weiter machst."
             }
             return "Etwas ist schiefgegeangen :("
         }

@@ -11,7 +11,7 @@
     <!-- script + style for the quiz (copy to other sections where needed)-->
     <script type="text/javascript" src="scripts/quizlib.1.0.1.min.js"></script>
     <!-- Dev: <script type="text/javascript" src="../../src/quizlib.js"></script>-->
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <script type="text/javascript" src="scripts/main3.js"></script>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -36,9 +36,6 @@
                     <li class="nav-item">
                         <a class="nav-link" target="_blank" href="https://snap.berkeley.edu/">Snap!</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="ProjektEinleitung.html">Projekt</a>
-                    </li>
                     <li class="nav-item dropdown active">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Lektionen
@@ -50,6 +47,9 @@
                             <li><a class="dropdown-item" href="Lektion4Einleitung.html">Lektion 4: 4 Chords - Tonleiterstufen</a></li>
                             <li><a class="dropdown-item" href="Lektion5Einleitung.html">Lektion 5: Quintverwandtschaft</a></li>
                         </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="ProjektEinleitung.html">Projekt</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Beispiele.html">Beispiele</a>
@@ -81,70 +81,142 @@
         <!-- QUIZ -->
         <div class="bg-light p-5 rounded">
             <h1>Quiz</h1><br>
-            <h2>Wie gut kennst du dich mit dem Thema aus?</h2><br>
-            <div id="quiz-1">
+            <h2>Wie gut kennst Du dich mit den Tonleiterstufen und 4 Chords aus?</h2><br>
+            <div id="quiz-3">
                 <!-- possible input types are text, radio and checkbox + name is the number of the question + value is important for the right answers
                         <input type="text" name="q1">
                         <li><label><input type="radio" name="q2" value="a">xyz</label></li> 
                         <li><label><input type="checkbox" name="q3" value="a">xyz</label></li>
                     -->
+                
                 <!-- Question 1 -->
                 <div class="card quizlib-question">
-                    <div class="quizlib-question-title">1. Aus wie vielen Tönen besteht eine Tonleiter?
-                    </div>
+                    <div class="quizlib-question-title">1. Welches sind die Hauptstufen der Harmonik?</div>
                     <div class="quizlib-question-answers">
-                        <input type="text" name="q1">
+                        <ul>
+                            <li><label><input type="checkbox" name="q1" value="a"> IV</label></li>
+                            <li><label><input type="checkbox" name="q1" value="b"> Dominante</label></li>
+                            <li><label><input type="checkbox" name="q1" value="c"> III</label></li>
+                            <li><label><input type="checkbox" name="q1" value="d"> Ersatz-Dominante</label></li>
+                            <li><label><input type="checkbox" name="q1" value="e"> Tonika</label></li>
+                            <li><label><input type="checkbox" name="q1" value="f"> VI</label></li>
+                            <li><label><input type="checkbox" name="q1" value="g"> VII</label></li>
+                            <li><label><input type="checkbox" name="q1" value="h"> Subdominanten-Parallele</label></li>
+                            <li><label><input type="checkbox" name="q1" value="i"> I</label></li>
+                            <li><label><input type="checkbox" name="q1" value="j"> Dominanten-Parallele</label></li>
+                            <li><label><input type="checkbox" name="q1" value="k"> Subdominante</label></li>
+                            <li><label><input type="checkbox" name="q1" value="l"> II</label></li>
+                            <li><label><input type="checkbox" name="q1" value="m"> V</label></li>
+
+                        </ul>
                     </div>
                 </div><br>
                 <!-- Question 2 -->
                 <div class="card quizlib-question">
-                    <div class="quizlib-question-title">2. Zwischen welchen Stufen befinden sich in der Dur-Tonleiter die kleinen Sekunden?</div>
+                    <div class="quizlib-question-title">2. Auf welchen Stufen einer Dur-Tonleiter befinden sich deren leitereigenen Dur-Dreiklänge?</div>
                     <div class="quizlib-question-answers">
                         <ul>
-                            <li><label><input type="checkbox" name="q2" value="a"> 2/3</label></li>
-                            <li><label><input type="checkbox" name="q2" value="b"> 3/4</label></li>
-                            <li><label><input type="checkbox" name="q2" value="c"> 5/6</label></li>
-                            <li><label><input type="checkbox" name="q2" value="d"> 7/8</label></li>
+                            <li><label><input type="checkbox" name="q2" value="a"> I</label></li>
+                            <li><label><input type="checkbox" name="q2" value="b"> II</label></li>
+                            <li><label><input type="checkbox" name="q2" value="c"> III</label></li>
+                            <li><label><input type="checkbox" name="q2" value="d"> IV</label></li>
+                            <li><label><input type="checkbox" name="q2" value="e"> V</label></li>
+                            <li><label><input type="checkbox" name="q2" value="f"> VI</label></li>
+                            <li><label><input type="checkbox" name="q2" value="g"> VII</label></li>
                         </ul>
                     </div>
                 </div><br>
                 <!-- Question 3 -->
                 <div class="card quizlib-question">
-                    <div class="quizlib-question-title">3. Welche Töne (Stufen) einer Dur-Tonleiter benötigt man um den dazu gehörenden Dur-Dreiklang zu bilden?</div>
+                    <div class="quizlib-question-title">3. Auf welchen Stufen einer Dur-Tonleiter befinden sich deren leitereigenen Moll-Dreiklänge?</div>
                     <div class="quizlib-question-answers">
                         <ul>
-                            <li><label><input type="checkbox" name="q3" value="a"> 1</label></li>
-                            <li><label><input type="checkbox" name="q3" value="b"> 2</label></li>
-                            <li><label><input type="checkbox" name="q3" value="c"> 3</label></li>
-                            <li><label><input type="checkbox" name="q3" value="d"> 4</label></li>
-                            <li><label><input type="checkbox" name="q3" value="e"> 5</label></li>
-                            <li><label><input type="checkbox" name="q3" value="f"> 6</label></li>
-                            <li><label><input type="checkbox" name="q3" value="g"> 7</label></li>
+                            <li><label><input type="checkbox" name="q3" value="a"> I</label></li>
+                            <li><label><input type="checkbox" name="q3" value="b"> II</label></li>
+                            <li><label><input type="checkbox" name="q3" value="c"> III</label></li>
+                            <li><label><input type="checkbox" name="q3" value="d"> IV</label></li>
+                            <li><label><input type="checkbox" name="q3" value="e"> V</label></li>
+                            <li><label><input type="checkbox" name="q3" value="f"> VI</label></li>
+                            <li><label><input type="checkbox" name="q3" value="g"> VII</label></li>
                         </ul>
                     </div>
                 </div><br>
                 <!-- Question 4 -->
                 <div class="card quizlib-question">
-                    <div class="quizlib-question-title">4. Was sind die Intervalle für einen Dur-Dreiklang?</div>
+                    <div class="quizlib-question-title">4. Auf welcher Stufe einer Dur-Tonleiter befindet sich kein leitereigener Dur- oder Moll-Dreiklang?
+                        <br>Bitte als römische Zahl angeben</div>       
                     <div class="quizlib-question-answers">
-                        <ul>
-                            <li><label><input type="radio" name="q4" value="a"> Grundton - große Terz - übermäßige Quinte</label></li>
-                            <li><label><input type="radio" name="q4" value="b"> Grundton - kleine Terz - verminderte Quinte</label></li>
-                            <li><label><input type="radio" name="q4" value="c"> Grundton - große Terz - reine Quinte</label></li>
-                        </ul>
+                        <input type="text" name="q4">
                     </div>
                 </div><br>
                 <!-- Question 5 -->
                 <div class="card quizlib-question">
-                    <div class="quizlib-question-title">5. Wo liegen die Töne bei einem Dur-Dreiklang auf der Notenzeile?</div>
+                    <div class="quizlib-question-title">5. Welche dieser leitereigenen Dreiklangsfolge repräsentiert die I, V, VI, IV der G-Dur-Tonleiter?</div>
                     <div class="quizlib-question-answers">
                         <ul>
-                            <li><label><input type="radio" name="q5" value="a"> alle auf den Notenlinien</label></li>
-                            <li><label><input type="radio" name="q5" value="b"> alle auf den Notenlinien oder alle in den Zwischenräumen</label></li>
-                            <li><label><input type="radio" name="q5" value="c"> alle in den Zwischenräumen</label></li>
+                            <li><label><input type="radio" name="q5" value="a">  <img src="quiz3/G-Dur Stufen falsch3.PNG" class="img-fluid" alt="Story1" width="200"></label></li>
+                            <li><label><input type="radio" name="q5" value="b">  <img src="quiz3/G-Dur Stufen falsch1.PNG" class="img-fluid" alt="Story1" width="200"></label></li>
+                            <li><label><input type="radio" name="q5" value="c">  <img src="quiz3/G-Dur Stufen falsch5.PNG" class="img-fluid" alt="Story1" width="200"></label></li>
+                            <li><label><input type="radio" name="q5" value="d"> <img src="quiz3/G-Dur Stufen falsch6.PNG" class="img-fluid" alt="Story1" width="200"></label></li>
+                            <li><label><input type="radio" name="q5" value="e"> <img src="quiz3/G-Dur Stufen falsch2.PNG" class="img-fluid" alt="Story1" width="200"></label></li>
+                            <li><label><input type="radio" name="q5" value="f"> <img src="quiz3/G-Dur Stufen.PNG" class="img-fluid" alt="Story1" width="200"></label></li>
+                            <li><label><input type="radio" name="q5" value="g"> <img src="quiz3/G-Dur Stufen falsch4.PNG" class="img-fluid" alt="Story1" width="200"></label></li>
+                            <li><label><input type="radio" name="q5" value="h"> <img src="quiz3/G-Dur Stufen falsch.PNG" class="img-fluid" alt="Story1" width="200"></label></li>
                         </ul>
                     </div>
                 </div><br>
+                <!-- Question 6 -->
+                <div class="card quizlib-question">
+                    <div class="quizlib-question-title">6. Welche dieser leitereigenen Dreiklangsfolge repräsentiert die II, IV, I, V der Es-Dur-Tonleiter?</div>
+                    <div class="quizlib-question-answers">
+                        <ul>
+                            <li><label><input type="radio" name="q6" value="a">  <img src="quiz3/Es-Dur Stufen falsch4.PNG" class="img-fluid" alt="Story1" width="200"></label></li>
+                            <li><label><input type="radio" name="q6" value="b">  <img src="quiz3/Es-Dur Stufen falsch7.PNG" class="img-fluid" alt="Story1" width="200"></label></li>
+                            <li><label><input type="radio" name="q6" value="c">  <img src="quiz3/Es-Dur Stufen falsch2.PNG" class="img-fluid" alt="Story1" width="200"></label></li>
+                            <li><label><input type="radio" name="q6" value="d"> <img src="quiz3/Es-Dur Stufen.PNG" class="img-fluid" alt="Story1" width="200"></label></li>
+                            <li><label><input type="radio" name="q6" value="e"> <img src="quiz3/Es-Dur Stufen falsch6.PNG" class="img-fluid" alt="Story1" width="200"></label></li>
+                            <li><label><input type="radio" name="q6" value="f"> <img src="quiz3/Es-Dur Stufen falsch3.PNG" class="img-fluid" alt="Story1" width="200"></label></li>
+                            <li><label><input type="radio" name="q6" value="g"> <img src="quiz3/Es-Dur Stufen falsch1.PNG" class="img-fluid" alt="Story1" width="200"></label></li>
+                            <li><label><input type="radio" name="q6" value="h"> <img src="quiz3/Es-Dur Stufen falsch.PNG" class="img-fluid" alt="Story1" width="200"></label></li>
+                            <li><label><input type="radio" name="q6" value="i"> <img src="quiz3/Es-Dur Stufen falsch5.PNG" class="img-fluid" alt="Story1" width="200"></label></li>
+                        </ul>
+                    </div>
+                </div><br>
+                <!-- Question 7 -->
+                <div class="card quizlib-question">
+                    <div class="quizlib-question-title">7. Welche dieser leitereigenen Dreiklangsfolge repräsentiert die VI, IV, I, V der Fis-Dur-Tonleiter?</div>
+                    <div class="quizlib-question-answers">
+                        <ul>
+                            <li><label><input type="radio" name="q7" value="a">  <img src="quiz3/Fis-Dur Stufen falsch7.PNG" class="img-fluid" alt="Story1" width="200"></label></li>
+                            <li><label><input type="radio" name="q7" value="b">  <img src="quiz3/Fis-Dur Stufen falsch1.PNG" class="img-fluid" alt="Story1" width="200"></label></li>
+                            <li><label><input type="radio" name="q7" value="c">  <img src="quiz3/Fis-Dur Stufen falsch5.PNG" class="img-fluid" alt="Story1" width="200"></label></li>
+                            <li><label><input type="radio" name="q7" value="d"> <img src="quiz3/Fis-Dur Stufen falsch.PNG" class="img-fluid" alt="Story1" width="200"></label></li>
+                            <li><label><input type="radio" name="q7" value="e"> <img src="quiz3/Fis-Dur Stufen falsch2.PNG" class="img-fluid" alt="Story1" width="200"></label></li>
+                            <li><label><input type="radio" name="q7" value="f"> <img src="quiz3/Fis-Dur Stufen falsch6.PNG" class="img-fluid" alt="Story1" width="200"></label></li>
+                            <li><label><input type="radio" name="q7" value="g"> <img src="quiz3/Fis-Dur Stufen falsch3.PNG" class="img-fluid" alt="Story1" width="200"></label></li>
+                            <li><label><input type="radio" name="q7" value="h"> <img src="quiz3/Fis-Dur Stufen.PNG" class="img-fluid" alt="Story1" width="200"></label></li>
+                            <li><label><input type="radio" name="q7" value="i"> <img src="quiz3/Fis-Dur Stufen falsch5.PNG" class="img-fluid" alt="Story1" width="200"></label></li>
+                        </ul>
+                    </div>
+                </div><br>
+                 <!-- Question 8 -->
+                <div class="card quizlib-question">
+                    <div class="quizlib-question-title">8. Welche dieser leitereigenen Dreiklangsfolge repräsentiert die I, V, VI, III der A-Dur-Tonleiter?</div>
+                    <div class="quizlib-question-answers">
+                        <ul>
+                            <li><label><input type="radio" name="q8" value="a">  <img src="quiz3/A-Dur Stufen falsch.PNG" class="img-fluid" alt="Story1" width="200"></label></li>
+                            <li><label><input type="radio" name="q8" value="b">  <img src="quiz3/A-Dur Stufen falsch3.PNG" class="img-fluid" alt="Story1" width="200"></label></li>
+                            <li><label><input type="radio" name="q8" value="c">  <img src="quiz3/A-Dur Stufen falsch7.PNG" class="img-fluid" alt="Story1" width="200"></label></li>
+                            <li><label><input type="radio" name="q8" value="d"> <img src="quiz3/A-Dur Stufen falsch5.PNG" class="img-fluid" alt="Story1" width="200"></label></li>
+                            <li><label><input type="radio" name="q8" value="e"> <img src="quiz3/A-Dur Stufen falsch2.PNG" class="img-fluid" alt="Story1" width="200"></label></li>
+                            <li><label><input type="radio" name="q8" value="f"> <img src="quiz3/A-Dur Stufen falsch6.PNG" class="img-fluid" alt="Story1" width="200"></label></li>
+                            <li><label><input type="radio" name="q8" value="g"> <img src="quiz3/A-Dur Stufen.PNG" class="img-fluid" alt="Story1" width="200"></label></li>
+                            <li><label><input type="radio" name="q8" value="h"> <img src="quiz3/A-Dur Stufen falsch4.PNG" class="img-fluid" alt="Story1" width="200"></label></li>
+                            <li><label><input type="radio" name="q8" value="i"> <img src="quiz3/A-Dur Stufen falsch1.PNG" class="img-fluid" alt="Story1" width="200"></label></li>
+                        </ul>
+                    </div>
+                </div><br>
+
                 <!-- Answer Button. Here, we pass the ID of the quiz element (the parent of this button) to the showResults function.  -->
                 <button type="button" onclick="showResults(this.parentNode.id);">Antworten überprüfen!</button>
             </div>
@@ -166,14 +238,14 @@
             document.getElementById("pb-wrong").style.width = "20%"
             document.getElementById("pb-noanswer").style.width = "0%"
                 //abhängig von Anteil richtiger Fragen Feedback anzeigen
-            document.getElementById("final-feedback").innerHTML = displayFeedback() + "<br><br> Falls du das Quiz nochmal machen möchtest, kannst du einfach diese Seite neu laden."
+            document.getElementById("final-feedback").innerHTML = displayFeedback() + "<br><br> Falls Du das Quiz nochmal machen möchtest, kannst Du einfach diese Seite neu laden."
         }
 
         function displayFeedback() {
             if (document.getElementById("pb-right").style.width > "70%") {
                 return "Gut gemacht! Du weißt schon viel über dieses Thema und kannst dir direkt das Video zur Umsetzung in Snap! angucken."
             } else {
-                return "Du konntest noch nicht alle Fragen richtig beantworten. Guck dir das Thema noch einmal genau an bevor du mit der Umsetzung in Snap! weiter machst."
+                return "Du konntest noch nicht alle Fragen richtig beantworten. Guck dir das Thema noch einmal genau an bevor Du mit der Umsetzung in Snap! weiter machst."
             }
             return "Etwas ist schiefgegeangen :("
         }

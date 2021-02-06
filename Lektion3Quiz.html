@@ -11,7 +11,7 @@
     <!-- script + style for the quiz (copy to other sections where needed)-->
     <script type="text/javascript" src="scripts/quizlib.1.0.1.min.js"></script>
     <!-- Dev: <script type="text/javascript" src="../../src/quizlib.js"></script>-->
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <script type="text/javascript" src="scripts/main2.js"></script>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -36,9 +36,6 @@
                     <li class="nav-item">
                         <a class="nav-link" target="_blank" href="https://snap.berkeley.edu/">Snap!</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="ProjektEinleitung.html">Projekt</a>
-                    </li>
                     <li class="nav-item dropdown active">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Lektionen
@@ -50,6 +47,9 @@
                             <li><a class="dropdown-item" href="Lektion4Einleitung.html">Lektion 4: 4 Chords - Tonleiterstufen</a></li>
                             <li><a class="dropdown-item" href="Lektion5Einleitung.html">Lektion 5: Quintverwandtschaft</a></li>
                         </ul>
+					</li>
+					<li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="ProjektEinleitung.html">Projekt</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Beispiele.html">Beispiele</a>
@@ -81,81 +81,197 @@
         <!-- QUIZ -->
         <div class="bg-light p-5 rounded">
             <h1>Quiz</h1><br>
-            <h2>Wie gut kennst du dich mit dem Thema aus?</h2><br>
-            <div id="quiz-1">
+            <h2>Wie gut kennst Du dich mit den Dreiklängen aus?</h2><br>
+            <div id="quiz-2">
                 <!-- possible input types are text, radio and checkbox + name is the number of the question + value is important for the right answers
                         <input type="text" name="q1">
                         <li><label><input type="radio" name="q2" value="a">xyz</label></li> 
                         <li><label><input type="checkbox" name="q3" value="a">xyz</label></li>
                     -->
-                <!-- Question 1 -->
-                <div class="card quizlib-question">
-                    <div class="quizlib-question-title">1. Aus wie vielen Tönen besteht eine Tonleiter?
-                    </div>
-                    <div class="quizlib-question-answers">
-                        <input type="text" name="q1">
-                    </div>
-                </div><br>
-                <!-- Question 2 -->
-                <div class="card quizlib-question">
-                    <div class="quizlib-question-title">2. Zwischen welchen Stufen befinden sich in der Dur-Tonleiter die kleinen Sekunden?</div>
-                    <div class="quizlib-question-answers">
-                        <ul>
-                            <li><label><input type="checkbox" name="q2" value="a"> 2/3</label></li>
-                            <li><label><input type="checkbox" name="q2" value="b"> 3/4</label></li>
-                            <li><label><input type="checkbox" name="q2" value="c"> 5/6</label></li>
-                            <li><label><input type="checkbox" name="q2" value="d"> 7/8</label></li>
-                        </ul>
-                    </div>
-                </div><br>
-                <!-- Question 3 -->
-                <div class="card quizlib-question">
-                    <div class="quizlib-question-title">3. Welche Töne (Stufen) einer Dur-Tonleiter benötigt man um den dazu gehörenden Dur-Dreiklang zu bilden?</div>
-                    <div class="quizlib-question-answers">
-                        <ul>
-                            <li><label><input type="checkbox" name="q3" value="a"> 1</label></li>
-                            <li><label><input type="checkbox" name="q3" value="b"> 2</label></li>
-                            <li><label><input type="checkbox" name="q3" value="c"> 3</label></li>
-                            <li><label><input type="checkbox" name="q3" value="d"> 4</label></li>
-                            <li><label><input type="checkbox" name="q3" value="e"> 5</label></li>
-                            <li><label><input type="checkbox" name="q3" value="f"> 6</label></li>
-                            <li><label><input type="checkbox" name="q3" value="g"> 7</label></li>
-                        </ul>
-                    </div>
-                </div><br>
-                <!-- Question 4 -->
-                <div class="card quizlib-question">
-                    <div class="quizlib-question-title">4. Was sind die Intervalle für einen Dur-Dreiklang?</div>
-                    <div class="quizlib-question-answers">
-                        <ul>
-                            <li><label><input type="radio" name="q4" value="a"> Grundton - große Terz - übermäßige Quinte</label></li>
-                            <li><label><input type="radio" name="q4" value="b"> Grundton - kleine Terz - verminderte Quinte</label></li>
-                            <li><label><input type="radio" name="q4" value="c"> Grundton - große Terz - reine Quinte</label></li>
-                        </ul>
-                    </div>
-                </div><br>
-                <!-- Question 5 -->
-                <div class="card quizlib-question">
-                    <div class="quizlib-question-title">5. Wo liegen die Töne bei einem Dur-Dreiklang auf der Notenzeile?</div>
-                    <div class="quizlib-question-answers">
-                        <ul>
-                            <li><label><input type="radio" name="q5" value="a"> alle auf den Notenlinien</label></li>
-                            <li><label><input type="radio" name="q5" value="b"> alle auf den Notenlinien oder alle in den Zwischenräumen</label></li>
-                            <li><label><input type="radio" name="q5" value="c"> alle in den Zwischenräumen</label></li>
-                        </ul>
-                    </div>
-                </div><br>
+                             
+            <!-- Question 1 -->
+			<div class="card quizlib-question">
+				<div class="quizlib-question-title">1. Welche Töne (Stufen) einer Dur/Moll-Tonleiter benötigt man um den dazu gehörenden Dur/Moll-Dreiklang zu bilden?</div>
+				<div class="quizlib-question-answers">
+					<ul>
+						<li><label><input type="checkbox" name="q1" value="a"> 1</label></li>
+						<li><label><input type="checkbox" name="q1" value="b"> 2</label></li>
+						<li><label><input type="checkbox" name="q1" value="c"> 3</label></li>
+						<li><label><input type="checkbox" name="q1" value="d"> 4</label></li>
+						<li><label><input type="checkbox" name="q1" value="e"> 5</label></li>
+						<li><label><input type="checkbox" name="q1" value="f"> 6</label></li>
+						<li><label><input type="checkbox" name="q1" value="g"> 7</label></li>
+					</ul>
+				</div>
+			</div><br>
+			<!-- Question 2 -->
+			<div class="card quizlib-question">
+				<div class="quizlib-question-title">2. Wo liegen die Töne bei einem Dur-/Moll-Dreiklang in der Grundstellung auf der Notenzeile?</div>
+				<div class="quizlib-question-answers">
+					<ul>
+						<li><label><input type="radio" name="q2" value="a"> alle auf den Notenlinien</label></li>
+						<li><label><input type="radio" name="q2" value="b"> alle auf den Notenlinien oder alle in den Zwischenräumen</label></li>
+						<li><label><input type="radio" name="q2" value="c"> alle in den Zwischenräumen</label></li>
+						<li><label><input type="radio" name="q2" value="d"> abwechselnd auf der Notenlinie und im Zwischenraum</label></li>
+					</ul>
+				</div>
+			</div><br>
+			<!-- Question 3 -->
+			<div class="card quizlib-question">
+				<div class="quizlib-question-title">3. Was sind die Intervalle für einen Dur-Dreiklang?</div>
+				<div class="quizlib-question-answers">
+					<ul>
+						<li><label><input type="radio" name="q3" value="a"> Grundton - große Terz - übermäßige Quinte</label></li>
+						<li><label><input type="radio" name="q3" value="b"> Grundton - kleine Terz - verminderte Quinte</label></li>
+						<li><label><input type="radio" name="q3" value="c"> Grundton - große Terz - reine Quinte</label></li>
+						<li><label><input type="radio" name="q3" value="d"> Grundton - kleine Terz - reine Quinte</label></li>
+					</ul>
+				</div>
+			</div><br>
+			<!-- Question 4 -->
+			<div class="card quizlib-question">
+				<div class="quizlib-question-title">4. Welche der folgenden Dreiklänge ist ein Dur-Dreiklang?</div>
+				<div class="quizlib-question-answers">
+					<ul>
+						<li><label><input type="checkbox" name="q4" value="a">  <img src="quiz2/B-Moll.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="checkbox" name="q4" value="b">  <img src="quiz2/A-Dur Bass.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="checkbox" name="q4" value="c">  <img src="quiz2/E-vermindert.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="checkbox" name="q4" value="d"> <img src="quiz2/D-Dur Bass.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="checkbox" name="q4" value="e"> <img src="quiz2/Es-Dur.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="checkbox" name="q4" value="f"> <img src="quiz2/H-Dur.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="checkbox" name="q4" value="g"> <img src="quiz2/F-Moll Bass.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="checkbox" name="q4" value="h"> <img src="quiz2/G-vermindert.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="checkbox" name="q4" value="i"> <img src="quiz2/Fis-Dur.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+					</ul>
+				</div>
+			</div><br>
+			<!-- Question 5 -->
+			<div class="card quizlib-question">
+				<div class="quizlib-question-title">Gegeben ist der erste Ton eines G-Dur-Dreiklangs <img src="quiz2/G-Dur erster Ton.PNG" class="img-fluid" alt="Story1" width="80"> <br> 5. Welche zwei Noten fehlen für eine vollständigen G-Dur-Dreiklang?</div>
+				<div class="quizlib-question-answers">
+					<ul>
+						<li><label><input type="radio" name="q5" value="a">  <img src="quiz2/G-Dur Teil2 falsch.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="radio" name="q5" value="b">  <img src="quiz2/G-Dur Teil2 falsch4.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="radio" name="q5" value="c">  <img src="quiz2/G-Dur Teil2 falsch2.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="radio" name="q5" value="d"> <img src="quiz2/G-Dur Teil2 falsch3.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="radio" name="q5" value="e"> <img src="quiz2/G-Dur Teil2 falsch1.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="radio" name="q5" value="f"> <img src="quiz2/G-Dur Teil2.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="radio" name="q5" value="g"> <img src="quiz2/G-Dur Teil2 falsch5.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+					</ul>
+				</div>
+			</div><br>
+			<!-- Question 6 -->
+			<div class="card quizlib-question">
+				<div class="quizlib-question-title">6. Was sind die Intervalle für einen Moll-Dreiklang?</div>
+				<div class="quizlib-question-answers">
+					<ul>
+						<li><label><input type="radio" name="q6" value="a"> Grundton - große Terz - reine Quinte</label></li>
+						<li><label><input type="radio" name="q6" value="b"> Grundton - kleine Terz - verminderte Quinte</label></li>
+						<li><label><input type="radio" name="q6" value="c"> Grundton - große Terz - übermaßig Quinte</label></li>
+						<li><label><input type="radio" name="q6" value="d"> Grundton - kleine Terz - reine Quinte</label></li>
+					</ul>
+				</div>
+			</div><br>
+			<!-- Question 7 -->
+			<div class="card quizlib-question">
+				<div class="quizlib-question-title">7. Welche der folgenden Dreiklänge ist ein Moll- Dreiklang?</div>
+				<div class="quizlib-question-answers">
+					<ul>
+						<li><label><input type="checkbox" name="q7" value="a">  <img src="quiz2/C-vermindert.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="checkbox" name="q7" value="b">  <img src="quiz2/As-Dur Bass.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="checkbox" name="q7" value="c">  <img src="quiz2/Fis-Moll.PNG"img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="checkbox" name="q7" value="d"> <img src="quiz2/E-vermindert.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="checkbox" name="q7" value="e"> <img src="quiz2/G-Moll.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="checkbox" name="q7" value="f"> <img src="quiz2/E-Dur.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="checkbox" name="q7" value="g"> <img src="quiz2/D-Moll Bass.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="checkbox" name="q7" value="h"> <img src="quiz2/C-Moll Bass.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="checkbox" name="q7" value="i"> <img src="quiz2/A-Moll Bass.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+					</ul>
+				</div>
+			</div><br>
+			 <!-- Question 8 -->
+			<div class="card quizlib-question">
+				<div class="quizlib-question-title">Gegeben ist der erste Ton eines F-Moll-Dreiklangs <img src="quiz2/F-Moll Teil 1.PNG" class="img-fluid" alt="Story1" width="80"> <br> 8. Welche zwei Noten fehlen für eine vollständigen F-Moll-Dreiklang?</div>
+				<div class="quizlib-question-answers">
+					<ul>
+						<li><label><input type="radio" name="q8" value="a">  <img src="quiz2/F-Moll Teil2 falsch4.PNG" class="img-fluid" alt="Story1" width="100"></label></li>
+						<li><label><input type="radio" name="q8" value="b">  <img src="quiz2/F-Moll Teil2 falsch2.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="radio" name="q8" value="c">  <img src="quiz2/F-Moll Teil2 falsch5.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="radio" name="q8" value="d"> <img src="quiz2/F-Moll Teil2 falsch1.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="radio" name="q8" value="e"> <img src="quiz2/F-Moll Teil2.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="radio" name="q8" value="f"> <img src="quiz2/F-Moll Teil2 falsch3.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="radio" name="q8" value="g"> <img src="quiz2/F-Moll Teil2 falsch.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+					</ul>
+				</div>
+			</div><br>
+			<!-- Question 9 -->
+			<div class="card quizlib-question">
+				<div class="quizlib-question-title">9. Welche der folgenden Dreiklänge ist ein Dur-Dreiklang in der 1.Umkehrung?</div>
+				<div class="quizlib-question-answers">
+					<ul>
+						<li><label><input type="checkbox" name="q9" value="a">  <img src="quiz2/A-Moll 1.Umkehrung.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="checkbox" name="q9" value="b">  <img src="quiz2//B-Dur 1.Umkehrung.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="checkbox" name="q9" value="c">  <img src="quiz2/C-vermindert 1.Umkehrung.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="checkbox" name="q9" value="d"> <img src="quiz2/E-Dur 1.Umkehrung.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="checkbox" name="q9" value="e"> <img src="quiz2/Es-Dur 2.Umkehrung.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="checkbox" name="q9" value="f"> <img src="quiz2/Fis-Dur 1.Umkehrung.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="checkbox" name="q9" value="g"> <img src="quiz2/G-Moll 1.Umkehrung.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="checkbox" name="q9" value="h"> <img src="quiz2/F-Moll 1.Umkehrung.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="checkbox" name="q9" value="i"> <img src="quiz2/H-Dur 1.Umkehrung.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+					</ul>
+				</div>
+			</div><br>
+			 <!-- Question 10 -->
+			<div class="card quizlib-question">
+				<div class="quizlib-question-title">10. Welche der folgenden Dreiklänge ist ein Moll-Dreiklang in der 2. Umkehrung?</div>
+				<div class="quizlib-question-answers">
+					<ul>
+						<li><label><input type="checkbox" name="q10" value="a">  <img src="quiz2/C-Moll 2.Umkehrung.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="checkbox" name="q10" value="b">  <img src="quiz2/A-Dur 2.Umkehrung.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="checkbox" name="q10" value="c">  <img src="quiz2/F-vermindert 2.Umkehrung.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="checkbox" name="q10" value="d"> <img src="quiz2/D-Moll 2.Umkehrung.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="checkbox" name="q10" value="e"> <img src="quiz2/B-Moll 1.Umkehrung.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="checkbox" name="q10" value="f"> <img src="quiz2/E-Moll 2.Umkehrung.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="checkbox" name="q10" value="g"> <img src="quiz2/H-vermindert 2.Umkehrung.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="checkbox" name="q10" value="h"> <img src="quiz2/Es-Dur 2.Umkehrung.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+						<li><label><input type="checkbox" name="q10" value="i"> <img src="quiz2/F-Moll 2.Umkehrung.PNG" class="img-fluid" alt="Story1" width="90"></label></li>
+					</ul>
+				</div>
+			</div><br>
+
+
                 <!-- Answer Button. Here, we pass the ID of the quiz element (the parent of this button) to the showResults function.  -->
                 <button type="button" onclick="showResults(this.parentNode.id);">Antworten überprüfen!</button>
+                </div>
+    
+                <!-- Auswertung des Tests (ob der Schüler denn nun das Video gucken soll oder nicht) -->
+                <h2 id="auswertung">Auswertung</h2><br>
+                <div id="quiz-result" class="card">
+                    Du hast <span id="quiz-percent"></span>% - <span id="quiz-score"></span>/<span id="quiz-max-score"></span> Fragen richtig beantwortet!<br />
+                </div>
+                <div id="quizfeedback"></div>
+                <!-- progress bar
+                    <div class="progress" id="progress-bar">
+                        <div class="progress-bar bg-success" id="pb-right" style="width:0%">
+                            Richtig
+                        </div>
+                        <div class="progress-bar bg-danger" id="pb-wrong"  style="width:0%">
+                            Falsch
+                        </div>
+                        <div class="progress-bar bg-secondary" id="pb-noanswer" style="width:100%">
+                            Nicht beantwortet
+                        </div>
+                    </div><br>
+                    <p display="inline" id="final-feedback"></p>
+                    -->
             </div>
-
-            <!-- Auswertung des Tests (ob der Schüler denn nun das Video gucken soll oder nicht) -->
-            <h2 id="auswertung">Auswertung</h2><br>
-            <div id="quiz-result" class="card">
-                Du hast <span id="quiz-percent"></span>% - <span id="quiz-score"></span>/<span id="quiz-max-score"></span> Fragen richtig beantwortet!<br />
-            </div>
-            <div id="quizfeedback"></div>
-    </main>
+    
+            <!-- <div class="bg-light p-5 rounded">
+                    <h1>Navbar example</h1>
+                    <p class="lead">This example is a quick exercise to illustrate how fixed to top navbar works. As you scroll, it will remain fixed to the top of your browser’s viewport.</p>
+                    <a class="btn btn-lg btn-primary" href="../components/navbar/" role="button">View navbar docs &raquo;</a>
+                </div> -->
+        </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script>
@@ -166,14 +282,14 @@
             document.getElementById("pb-wrong").style.width = "20%"
             document.getElementById("pb-noanswer").style.width = "0%"
                 //abhängig von Anteil richtiger Fragen Feedback anzeigen
-            document.getElementById("final-feedback").innerHTML = displayFeedback() + "<br><br> Falls du das Quiz nochmal machen möchtest, kannst du einfach diese Seite neu laden."
+            document.getElementById("final-feedback").innerHTML = displayFeedback() + "<br><br> Falls Du das Quiz nochmal machen möchtest, kannst Du einfach diese Seite neu laden."
         }
 
         function displayFeedback() {
             if (document.getElementById("pb-right").style.width > "70%") {
-                return "Gut gemacht! Du weißt schon viel über dieses Thema und kannst dir direkt das Video zur Umsetzung in Snap! angucken."
+                return "Gut gemacht! Du weißt schon viel über dieses Thema und kannst Dir direkt das Video zur Umsetzung in Snap! angucken."
             } else {
-                return "Du konntest noch nicht alle Fragen richtig beantworten. Guck dir das Thema noch einmal genau an bevor du mit der Umsetzung in Snap! weiter machst."
+                return "Du konntest noch nicht alle Fragen richtig beantworten. Guck Dir das Thema noch einmal genau an bevor Du mit der Umsetzung in Snap! weiter machst."
             }
             return "Etwas ist schiefgegeangen :("
         }

@@ -34,16 +34,16 @@ function showResults(quizID) {
         // Change background colour of results div according to score percent
         if (quizScorePercent >= 75) {
             quizResultElement.style.backgroundColor = '#4caf50';
-            document.getElementById('quizfeedback').innerHTML = "Gut gemacht! Du weißt schon viel über dieses Thema und kannst dir direkt das Video zur Umsetzung in Snap! angucken." }
+            document.getElementById('quizfeedback').innerHTML = "Gut gemacht! Du weißt schon viel über dieses Thema und kannst Dir direkt das Video zur Umsetzung in Snap! angucken." }
         else if (quizScorePercent >= 50) {
             quizResultElement.style.backgroundColor = '#ffc107';
-            document.getElementById('quizfeedback').innerHTML = "Du konntest noch nicht alle Fragen richtig beantworten. Guck dir das Thema noch einmal genau an bevor du mit der Umsetzung in Snap! weiter machst." }
+            document.getElementById('quizfeedback').innerHTML = "Du konntest noch nicht alle Fragen richtig beantworten. Guck Dir das Thema noch einmal genau an bevor Du mit der Umsetzung in Snap! weiter machst." }
         else if (quizScorePercent >= 25) {
             quizResultElement.style.backgroundColor = '#ff9800';
-            document.getElementById('quizfeedback').innerHTML = "Du konntest noch nicht alle Fragen richtig beantworten. Guck dir das Thema noch einmal genau an bevor du mit der Umsetzung in Snap! weiter machst." }
+            document.getElementById('quizfeedback').innerHTML = "Du konntest noch nicht alle Fragen richtig beantworten. Guck Dir das Thema noch einmal genau an bevor Du mit der Umsetzung in Snap! weiter machst." }
         else if (quizScorePercent >= 0) {
             quizResultElement.style.backgroundColor = '#f44336';
-            document.getElementById('quizfeedback').innerHTML = "Du konntest noch nicht alle Fragen richtig beantworten. Guck dir das Thema noch einmal genau an bevor du mit der Umsetzung in Snap! weiter machst." }
+            document.getElementById('quizfeedback').innerHTML = "Du konntest noch nicht alle Fragen richtig beantworten. Guck Dir das Thema noch einmal genau an bevor Du mit der Umsetzung in Snap! weiter machst." }
         
         // Highlight questions according to whether they were correctly answered. The callback allows us to highlight/show the correct answer
         activeQuiz.highlightResults(handleAnswers);
@@ -80,19 +80,13 @@ window.onload = function() {
     // The key is the ID of the quiz element, same as what we pass to the Quiz object as the first argument.
     quizzes['quiz-1'] = new Quiz('quiz-1', [
         '8',
-        ['b','d'],
-        ['a', 'c', 'e'],
+        ['c','f'],
         'c',
-        'b'
-    ]);
-
-    quizzes['quiz-2'] = new Quiz('quiz-2', [
-        'b',
-        'squid'
-    ]);
-
-    quizzes['quiz-3'] = new Quiz('quiz-3', [
-        '4',
-        'b'
+        ['e', 'g'],
+        ['b', 'e'],
+        'd',
+        ['d', 'h'],
+        ['d', 'f'],
+        ['a', 'e']
     ])
 };
