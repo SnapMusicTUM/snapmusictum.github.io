@@ -81,10 +81,10 @@ window.onload = function() {
     // The key is the ID of the quiz element, same as what we pass to the Quiz object as the first argument.
     quizzes['quiz-1'] = new Quiz('quiz-1', [
         '8',
-        ['c','f'],
+        ['c','g'],
         'c',
         ['e', 'g'],
-        ['b', 'e'],
+        ['b', 'f'],
         'd',
         ['d', 'h'],
         ['c', 'e'],
