@@ -61,6 +61,7 @@ function handleAnswers(quiz, question, no, correct) {
                 // If the current input element is part of the correct answer, highlight it
                 if (quiz.answers[no].indexOf(answers[i].value) > -1) {
                     answers[i].parentNode.classList.add(Quiz.Classes.CORRECT);
+                    answers[i].parentNode.innerHTML = answers[i].parentNode.innerHTML + '&#8195  -- Richtig';
                 }
             } else {
                 // If the input is anything other than a checkbox or radio button, show the correct answer next to the element
